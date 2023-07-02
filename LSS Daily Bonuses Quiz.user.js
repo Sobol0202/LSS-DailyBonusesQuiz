@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Daily Bonuses Quiz
 // @namespace    https://www.leitstellenspiel.de
-// @version      1.0
+// @version      1.1
 // @description  Popup quiz for the daily bonuses
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/daily_bonuses
@@ -10,6 +10,8 @@
 
 (function() {
     'use strict';
+
+    var antwortAusgewählt = false; // Variable zum Speichern des Zustands der Frage
 
     // Fragenkatalog mit Fragen und Antworten
     var fragen = [
@@ -154,25 +156,165 @@
         richtigeAntwort: 0
     },
     {
-        frage: "Mit Flamme und Glut brennen",
+        frage: "Speziell für technische Hilfeleistungen größeren Umfangs sind",
         antworten: [
-            "Holz, Kohle, Papier.",
-            "Metalle.",
-            "Wachs, Stearin, Fett.",
-            "Gase."
+            "Löschgruppenfahrzeuge geeignet.",
+            "Tanklöschfahrzeuge geeignet.",
+            "Rüstwagen geeignet.",
+            "alle Feuerwehrfahrzeuge geeignet, die einen speziellen Rüstsatz mitführen."
+        ],
+        richtigeAntwort: 2
+    },
+            {
+        frage: "Ein TSF hat eine ausreichende feuerwehrtechnische Beladung für",
+        antworten: [
+            "einen selbstständigen Trupp.",
+            "eine Löschgruppe.",
+            "maximal eine Löschstaffel.",
+            "Einsätze im Bereich der technischen Hilfeleistung größeren Umfangs."
+        ],
+        richtigeAntwort: 1
+    },
+            {
+        frage: "Die Abkürzung FPN 10-1000 bedeutet",
+        antworten: [
+            "Feuerpumpe, 800 l/min bei 8 MPa.",
+            "Feuerlöschkreiselpumpe, Kenndaten: 1000 l/min bei 10 bar.",
+            "Feuerlöschkreiselpumpe, Kenndaten: 1000 bar bei 10 l/min.",
+            "fest eingebaute Pumpe (am oder im Löschfahrzeug)"
+        ],
+        richtigeAntwort: 1
+    },
+            {
+        frage: "Auf einem LF 10/6 wird/werden mitgeführt",
+        antworten: [
+            "die vierteilige Steckleiter.",
+            "die zweiteilige Schiebleiter.",
+            "die vierteilige Schiebleiter und die dreiteilige Steckleiter.",
+            "die zweiteilige Schiebleiter und die Multifunktionsleiter."
         ],
         richtigeAntwort: 0
     },
-    {
-        frage: "Für welche Stoffe gilt nebenstehendes Bildzeichen?",
+            {
+        frage: "Zu den Tanklöschfahrzeugen zählt/zählen",
         antworten: [
-            "Brände von Metallen",
-            "Brennbare Gase",
-            "Brennbare flüssige Stoffe",
-            "Brennbare Chemikalien"
+            "das LF 10/6.",
+            "das TLF 8/18.",
+            "das TSF-W.",
+            "alle Fahrzeuge mit eingebauten Löschwasserbehälter."
         ],
         richtigeAntwort: 1
-    }
+    },
+            {
+        frage: "Der Löschwasserbehälter im TLF 24/50 enthält",
+        antworten: [
+            "1600 l.",
+            "2400 l.",
+            "4800 l",
+            "5000 l"
+        ],
+        richtigeAntwort: 2
+    },
+            {
+        frage: "Der Wasserringmonitor befindet sich in einem TSF generell",
+        antworten: [
+            "in Fahrtrichtung links.",
+            "in Fahrtrichtung rechts.",
+            "im Geräteraum auf der Fahrzeugrückseite.",
+            "nirgendwo, da eine solche Armatur nicht zur Standardausrüstung eines TSF gehört."
+        ],
+        richtigeAntwort: 3
+    },
+            {
+        frage: "Zur Gruppe der Löschgruppenfahrzeuge zählt",
+        antworten: [
+            "das LF 20/16.",
+            "das TLF 8/18.",
+            "das TSF-W.",
+            "das TLF 16/25."
+        ],
+        richtigeAntwort: 0
+    },
+            {
+        frage: "Eine DLAK 23-12 ist:",
+        antworten: [
+            "ein Hubrettungsfahrzeug mit Allradantrieb",
+            "ein Hubrettungsfahrzeug mit automatischen Leiterbewegungen",
+            "ein Hubrettungsfahrzeug mit Automatikgetriebe",
+            "ein Hubrettungsfahrzeug mit einer Nennrettungshöhe von 12 m"
+        ],
+        richtigeAntwort: 1
+    },
+            {
+        frage: "Ein StLF 10/6",
+        antworten: [
+            "ist ein Löschfahrzeug mit Staffelbeladung und Gruppenbesatzung",
+            "muss über eine PFPN 10-1000 verfügen",
+            "ist ein Löschfahrzeug mit Beladung für eine Gruppe",
+            "ist kein genormtes Löschfahrzeug"
+        ],
+        richtigeAntwort: 2
+    },
+            {
+        frage: "Zur persönlichen Ausrüstung (Mindestschutzausrüstung) gehört unter anderem",
+        antworten: [
+            "Feuerwehr-Schutzanzug und Beleuchtungsgerät.",
+            "Feuerwehr-Schutzanzug und Fw-Schutzhandschuhe.",
+            "Feuerwehr-Schutzhelm und Pressluftatmer.",
+            "Gesichtsschutz (Visier) und Feuerwehrhaltegurt."
+        ],
+        richtigeAntwort: 1
+    },
+            {
+        frage: "Hitzeschutzkleidung schützt vorgehende Einsatzkräfte bei der Brandbekämpfung vorrangig gegen",
+        antworten: [
+            "einen Fliehkraftzerfall.",
+            "herumfliegende Splitter.",
+            "Strahlungswärme.",
+            "tiefkalte, verflüssigte Gase."
+        ],
+        richtigeAntwort: 2
+    },
+            {
+        frage: "Abweichungen zur persönlichen Schutzausrüstung sind entsprechend",
+        antworten: [
+            "UVV Feuerwehren auf Befehl des Einheitsführers möglich.",
+            "UVV Feuerwehren auf Befehl des Einheitsführers nicht möglich.",
+            "UVV Feuerwehren auf Befehl des Landesbranddirektors möglich.",
+            "VUU Pflichtfeuerwehren auf Befehl des Einheitsführers möglich.."
+        ],
+        richtigeAntwort: 0
+    },
+            {
+        frage: "Ein B-Druckschlauch hat einen Innendurchmesser (Nennweite) von",
+        antworten: [
+            "7,5 m",
+            "7,5 mm",
+            "75 mm",
+            "7,5 dm"
+        ],
+        richtigeAntwort: 2
+    },
+            {
+        frage: "Folgende(s) Löschmittel dürfen/darf bei Schornsteinbränden nicht eingesetzt werden:",
+        antworten: [
+            "ABC-Löschpulver",
+            "BC-Löschpulver.",
+            "Wasser",
+            "Sand"
+        ],
+        richtigeAntwort: 2
+    },
+    {
+        frage: "Speiseöle, die Anwendung in einer Friteuse finden werden, der",
+        antworten: [
+            "Brandklasse A zugeordnet.",
+            "Brandklasse B zugeordnet.",
+            "Brandklasse C zugeordnet.",
+            "Brandklasse F zugeordnet."
+        ],
+        richtigeAntwort: 3
+    },
         // Weitere Fragen hier hinzufügen...
     ];
 
@@ -201,27 +343,33 @@
             antwortButton.addEventListener("click", antwortButtonClickHandler);
             antwortButtonsContainer.appendChild(antwortButton);
         });
+
+        antwortAusgewählt = false; // Zustand der Frage zurücksetzen
     }
 
     // Funktion zum Behandeln des Klicks auf eine Antwort
     function antwortButtonClickHandler(event) {
-        var antwortButton = event.target;
-        var antwortIndex = Array.from(antwortButtonsContainer.children).indexOf(antwortButton);
-        var aktuelleFrage = fragen.find(function(frage) {
-            return frage.frage === frageElement.textContent;
-        });
+        if (!antwortAusgewählt) { // Überprüfen, ob noch keine Antwort ausgewählt wurde
+            var antwortButton = event.target;
+            var antwortIndex = Array.from(antwortButtonsContainer.children).indexOf(antwortButton);
+            var aktuelleFrage = fragen.find(function(frage) {
+                return frage.frage === frageElement.textContent;
+            });
 
-        if (antwortIndex === aktuelleFrage.richtigeAntwort) {
-            antwortButton.style.backgroundColor = "green";
-            setTimeout(function() {
-                popup.remove();
-            }, 3000);
-        } else {
-            antwortButton.style.backgroundColor = "red";
-            setTimeout(function() {
-                // Nächste Frage anzeigen
-                aktualisierePopup();
-            }, 3000);
+            antwortAusgewählt = true; // Zustand der Frage auf "Antwort ausgewählt" setzen
+
+            if (antwortIndex === aktuelleFrage.richtigeAntwort) {
+                antwortButton.style.backgroundColor = "green";
+                setTimeout(function() {
+                    popup.remove();
+                }, 3000);
+            } else {
+                antwortButton.style.backgroundColor = "red";
+                setTimeout(function() {
+                    // Nächste Frage anzeigen
+                    aktualisierePopup();
+                }, 3000);
+            }
         }
     }
 
@@ -261,3 +409,4 @@
     // Popup initialisieren
     aktualisierePopup();
 })();
+
