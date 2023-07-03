@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Daily Bonuses Quiz
 // @namespace    https://www.leitstellenspiel.de
-// @version      1.1
+// @version      1.2
 // @description  Popup quiz for the daily bonuses
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/daily_bonuses
@@ -134,6 +134,396 @@
             "Hartwachs und entgaste Kohle."
         ],
         richtigeAntwort: 1
+    },
+        	            {
+        frage: "Am mittleren Ausgangsstutzen des Verteilers (B-CBC) ist",
+        antworten: [
+            "ein B/C-Übergangsstück angekuppelt.",
+            "ein A/C-Übergangsstück angekuppelt.",
+            "ein A/B-Übergangsstück angekuppelt.",
+            "ein C/D-Übergangsstück angekuppelt."
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Ein C-Strahlrohr mit Mundstück hat bei einem Druck von 4 bar eine Wasserdurchflussmenge pro Minute von",
+        antworten: [
+            "ca. 200 l.",
+            "ca. 100 l.",
+            "ca. 300 l.",
+            "ca. 400 l."
+        ],
+        richtigeAntwort: 1
+    },
+		            {
+        frage: "Ein B-Strahlrohr mit Mundstück hat bei 4 bar Strahlrohrdruck eine Wasserdurchflussmenge von",
+        antworten: [
+            "ca. 400 l/min.",
+            "ca. 300 l/min.",
+            "ca. 600 l/min.",
+            "ca. 500 l/min."
+        ],
+        richtigeAntwort: 1
+    },
+		            {
+        frage: "B-Druckschläuche können nach Norm wie folgt bemessen sein:",
+        antworten: [
+            "85 mm Nennweite; 20 m und 30 m Schlauchlänge.",
+            "75 mm Nennweite; 5 m, 20 m und 35 m Schlauchlänge.",
+            "75 mm Nennweite; 15 m und 30 m Schlauchlänge.",
+            "52 mm Nennweite; 20 m und 30 m Schlauchlänge (nur bei B-52)."
+        ],
+        richtigeAntwort: 1
+    },
+		            {
+        frage: "Zu den wasserführenden Armaturen zählen",
+        antworten: [
+            "Standrohr, Saugkorb, Sammelstück und Verteiler.",
+            "Kübelspritze, Wasserlöscher, Entlüftungseinrichtung.",
+            "Tauchpumpe, Hydrantenschlüssel, Auffülltrichter.",
+            "Schlauchkupplungen, Strahlrohre, Verteiler, Entlüftungseinrichtung."
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Zum Halten eines B-Strahlrohres mit Stützkrümmer sind mindestens",
+        antworten: [
+            "zwei Feuerwehrleute erforderlich.",
+            "drei bis vier Feuerwehrleute erforderlich.",
+            "ein kräftiger Feuerwehrmann erforderlich.",
+            "Einsatzkräfte nach Weisung des Gruppenführers, mindestens einer."
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Ein A-Saugschlauch mit der Kennzeichnung A-110-1500-K hat einen Innendurchmesser von",
+        antworten: [
+            "10 cm.",
+            "95 mm.",
+            "110 mm.",
+            "120 mm."
+        ],
+        richtigeAntwort: 2
+    },
+		            {
+        frage: "Bei einem Mehrzweckstrahlrohr gibt es die Schaltstellungen",
+        antworten: [
+            "nur Vollstrahl und Sprühstrahl.",
+            "Vollstrahl, Sprühstrahl und Wasser Halt.",
+            "Vollstrahl und Wasser Halt.",
+            "Hohlstrahl, Vollstrahl, Kegelstrahl."
+        ],
+        richtigeAntwort: 1
+    },
+		            {
+        frage: "Das Standrohr dient zur",
+        antworten: [
+            "Wasserentnahme aus Unterflurhydranten.",
+            "Wasserentnahme aus Überflurhydranten.",
+            "Straßenüberführung von Schlauchleitungen.",
+            "Stabilisierung von Strahlrohren beim stationären Einsatz."
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Ein Schaumrohr wird am Verteiler angeschlossen",
+        antworten: [
+            "am mittleren Ausgangsstutzen / an der mittleren Kupplung.",
+            "nur bei Vornahme eines Schaumrohres S 4.",
+            "nach Reihenfolge der eingesetzten Rohre.",
+            "nach Vorgabe des Gruppenführers."
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Für die Inbetriebnahme eines Unterflurhydranten werden",
+        antworten: [
+            "Standrohr und Unterflurhydrantenschlüssel benötigt.",
+            "Sammelstück und Kupplungsschlüssel benötigt.",
+            "Standrohr und Feuerwehrschlüssel benötigt.",
+            "Ausrüstungsteile nach Vorgabe des Gruppenführers benötigt."
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Ein Schild mit der Beschriftung H 100 weist auf",
+        antworten: [
+            "einen Hydranten für die Löschwasserentnahme in 100 m Entfernung hin.",
+            "einen Hydranten für Löschwasser mit einer Ergiebigkeit von 100 l/min hin.",
+            "einen Hydranten hin, der auf einer Versorgungsleitung von 100 mm Innendurchmesser montiert ist.",
+            "einen Hydranten hin, für den ein Hydrantenschlüssel NW 100 mm erforderlich ist."
+        ],
+        richtigeAntwort: 2
+    },
+		            {
+        frage: "Ein Standrohr mit passendem Schlüssel wird gebraucht zur Inbetriebnahme von",
+        antworten: [
+            "Überflurhydranten.",
+            "Wandhydranten.",
+            "Unterflurhydranten.",
+            "gegen Missbrauch gesicherten Hydranten."
+        ],
+        richtigeAntwort: 2
+    },
+		            {
+        frage: "Welche Schaltmöglichkeiten müssen bei einem genormten Hohlstrahlrohr gegeben sein?",
+        antworten: [
+            "Strahlrohr auf/dreiviertel-zu",
+            "Strahlrohr auf/zu und Durchflussmengeneinstellung",
+            "Strahlrohr auf/zu und Einstellmöglichkeit der Wasserstrahlform",
+            "Strahlrohr auf/zu, Einstellmöglichkeit der Wasserstrahlform und Durchflussmengeneinstellung"
+        ],
+        richtigeAntwort: 3
+    },
+		            {
+        frage: "Welches der nachfolgenden Mehrzweckstrahlrohre ist das Kleinste?",
+        antworten: [
+            "AM",
+            "BM",
+            "CM",
+            "DM"
+        ],
+        richtigeAntwort: 3
+    },
+		            {
+        frage: "Mit der vierteiligen Steckleiter ist",
+        antworten: [
+            "eine Rettungshöhe von 8,40 Meter erreichbar.",
+            "das zweite Obergeschoss erreichbar.",
+            "das dritte Obergeschoss erreichbar.",
+            "das erste Obergeschoss bei einem Anstellwinkel von 90° erreichbar."
+        ],
+        richtigeAntwort: 1
+    },
+		            {
+        frage: "Die Feuerwehrleine wird Personen zu Rettungszwecken in Form",
+        antworten: [
+            "eines Rettungsbundes angelegt.",
+            "eines Kreuzknotens angelegt.",
+            "eines Mastwurfes angelegt.",
+            "eines Rettungsknotens angelegt."
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Die Feuerwehrleine dient als",
+        antworten: [
+            "Rettungs- und Führungsleine.",
+            "Halte- und Ventilleine.",
+            "Absperr- und Abschleppleine.",
+            "Mehrzweckleine."
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Es dürfen",
+        antworten: [
+            "max. drei Steckleiterteile zusammengesteckt werden.",
+            "max. vier Steckleiterteile zusammengesteckt werden.",
+            "max. fünf Steckleiterteile zusammengesteckt werden.",
+            "eine unbegrenzte Anzahl von Steckleiterteilen nach der Vorgabe des Einsatzleiters zusammengesteckt werden."
+        ],
+        richtigeAntwort: 1
+    },
+		            {
+        frage: "Die Feuerwehrleine",
+        antworten: [
+            "dient zum Einfangen von Tieren, alte Bezeichnung: Fangleine!",
+            "dient als Halteleine.",
+            "ist ein Rettungsgerät, das zur ergänzenden persönlichen Ausrüstung gehört.",
+            "dient in bestimmten Fällen als Auffangsicherung."
+        ],
+        richtigeAntwort: 2
+    },
+		            {
+        frage: "Der Halbschlag",
+        antworten: [
+            "dient zum Führen von Geräten beim Hochziehen.",
+            "dient nur der Einbindung von zwei Personen auf Krankentragen.",
+            "dient ausschließlich der Sicherung des Auszugseiles der dreiteiligen Schiebleiter.",
+            "dient in bestimmten Fällen als Auffangsicherung beim Retten/Selbstretten."
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Mit der dreiteiligen Schiebleiter ist",
+        antworten: [
+            "eine Rettungshöhe von 13.40 m erreichbar.",
+            "das zweite Obergeschoss erreichbar.",
+            "das dritte Obergeschoss erreichbar.",
+            "das vierte Obergeschoss bei einem Anstellwinkel von 90° erreichbar."
+        ],
+        richtigeAntwort: 2
+    },
+		            {
+        frage: "Die Multifunktionsleiter",
+        antworten: [
+            "ist Standardbeladung auf einem HLF 20/16.",
+            "ist Standardbeladung auf einem RW.",
+            "ist keine genormte Leiter der Feuerwehr.",
+            "gehört nicht zur Standardbeladung von Feuerwehrfahrzeugen."
+        ],
+        richtigeAntwort: 1
+    },
+		            {
+        frage: "Beim Einsatz des Einreißhakens",
+        antworten: [
+            "ist Gesichtschutz niemals erforderlich.",
+            "ist Gesichtsschutz erforderlich.",
+            "dürfen sich nicht beteiligte Personen im Wirkungsbereich aufhalten.",
+            "kann generell auf Grundsätze, die einer Unfallverhütung dienen, verzichtet werden."
+        ],
+        richtigeAntwort: 1
+    },
+		            {
+        frage: "Mit der Feuerwehraxt ist es möglich:",
+        antworten: [
+            "Türen zu öffnen",
+            "Holz für Abstützungen zu kürzen",
+            "Die Feuerwehraxt hat heute keine Bedeutung mehr",
+            "darf nur truppweise eingesetzt werden"
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Bei Einsatz der Winkerkelle ist zu beachten, dass",
+        antworten: [
+            "Winkerkellen zur Verkehrsregelung eingesetzt werden dürfen.",
+            "Winkerkellen nur zur Verkehrssicherung eingesetzt werden dürfen.",
+            "Winkerkellen keine Feuerwehrzulassung haben.",
+            "Winkerkellen nur auf Anweisung der Polizei eingesetzt werden dürfen."
+        ],
+        richtigeAntwort: 1
+    },
+		            {
+        frage: "Rettungs- und Selbstrettungsübungen dürfen durchgeführt werden bis",
+        antworten: [
+            "zu max. 8,0 m Höhe.",
+            "max. zum 1. Obergeschoss.",
+            "zu max. 6,0 m Höhe.",
+            "zu einer durch den Übungsleiter vorzugebenden Höhe."
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Der Gerätesatz „Absturzsicherung“ darf",
+        antworten: [
+            "nur von speziell ausgebildetem Personal eingesetzt werden.",
+            "nur bei der Rettung von Personen genutzt werden.",
+            "bei Feuerwehren gar nicht verwendet werden.",
+            "nur zum öffnen einer Bierflasche verwendet werden."
+        ],
+        richtigeAntwort: 0
+    },
+		            {
+        frage: "Die vier große metallverstärkte Ring an der Schleifkorbtrage",
+        antworten: [
+            "dienen zum Einhaken von optionaler Zusatzausrüstung, die nicht jeder Hersteller von Schleifkorbtragen im Angebot hat.",
+            "dienen zum Einhaken von Karabinerhaken.",
+            "sind ohne Bedeutung, da sie lediglich der inneren Versteifung der Trage dienen.",
+            "dürfen nur durch Fachpersonal (Einsatz auf See oder Gewässern) benutzt werden."
+        ],
+        richtigeAntwort: 1
+    },
+		            {
+        frage: "Ein Hydranten Hinweisschild gibt",
+        antworten: [
+            "den Durchmesser der Versorgungsleitung und die Wassermenge an.",
+            "den Druck und die Wassermenge an.",
+            "den Durchmesser der Versorgungsleitung und die Lage des Hydranten bezogen auf das Schild an.",
+            "die Lage des Hydranten und den Nennaußendurchmesser der Kupplung an."
+        ],
+        richtigeAntwort: 2
+    },
+			            {
+        frage: "Schläuche für Sonderrohre werden am Verteiler (in Fließrichtung)",
+        antworten: [
+            "an der linken Kupplung angeschlossen.",
+            "an der mittleren Kupplung angeschlossen.",
+            "an der rechten Kupplung angeschlossen.",
+            "nach Weisung des Gruppenführers angeschlossen."
+        ],
+        richtigeAntwort: 1
+    },
+			            {
+        frage: "Für das Kuppeln von zwei Saugschläuchen (Herstellen der Saugleitung) ist gemäß FwDV 3 „Einheiten im Löscheinsatz“",
+        antworten: [
+            "der Maschinist zuständig.",
+            "der Wassertrupp zuständig.",
+            "nur der Wassertruppführer zuständig.",
+            "nur das Wassertruppmitglied zuständig."
+        ],
+        richtigeAntwort: 1
+    },
+			            {
+        frage: "Der Schlauchtrupp verlegt Schlauchleitungen für den Angriffstrupp gemäß FwDV 3 „Einheiten im Löscheinsatz“",
+        antworten: [
+            "von der Wasserentnahmestelle zur Pumpe.",
+            "vom Trupp zum Verteiler.",
+            "vom Verteiler zum Trupp.",
+            "nur nach Weisung des Gruppenführers."
+        ],
+        richtigeAntwort: 0
+    },
+			            {
+        frage: "„Schlauchreserven“ müssen berücksichtigt werden,",
+        antworten: [
+            "damit die Schläuche sauber in Buchten liegen können.",
+            "damit der vorgehende Trupp die notwendige Beweglichkeit und Reichweite erhält.",
+            "um einem möglichen Mangel an Rollschläuchen vorzubeugen.",
+            "um für beschädigte Feuerlöschschläuche Ersatz vorzuhalten."
+        ],
+        richtigeAntwort: 1
+    },
+			            {
+        frage: "Eine unter elektrischer Spannung stehende Leitung ist vollständig von der Kabeltrommel abzurollen",
+        antworten: [
+            "wegen der Gefahr einer unzulässig hohen Erwärmung.",
+            "wegen einer Gefährdung des Flugfunkverkehrs.",
+            "zwecks Sichtkontrolle auf Beschädigungen.",
+            "zwecks Kontrolle der Länge der Leitung."
+        ],
+        richtigeAntwort: 0
+    },
+			            {
+        frage: "Die Aufgaben des Sicherungstrupps werden bei der technischen Hilfeleistung im Allgemeinen vom",
+        antworten: [
+            "Angriffstrupp wahrgenommen.",
+            "Wassertrupp wahrgenommen.",
+            "Schlauchtrupp wahrgenommen.",
+            "Melder und Maschinist wahrgenommen."
+        ],
+        richtigeAntwort: 1
+    },
+			            {
+        frage: "An Einsatzstellen hat der Rettungstrupp beim Einsatz von hydr. Rettungsgeräten folgendes zu beachten:",
+        antworten: [
+            "Vorgehen nach eigenem Ermessen",
+            "Vorgehen nach Weisung des zuständigen Gruppenführers",
+            "Vorgehen nur nach Wunsch der Unfallopfer",
+            "orgehen nach Weisung des Rettungsdienstpersonals."
+        ],
+        richtigeAntwort: 1
+    },
+			            {
+        frage: "Als „Trümmerschatten“ wird bezeichnet",
+        antworten: [
+            "ein durch Einsturz bedrohter Bereich, nur innerhalb von Gebäuden.",
+            "ein durch Trümmer schwer einsehbarer Bereich (abgeschatteter) Bereich.",
+            "ein durch Einsturz bedrohter Bereich.",
+            "ein Bereich, in dem man vor herabfallenden Trümmern sicher abgeschattet ist."
+        ],
+        richtigeAntwort: 2
+    },
+			            {
+        frage: "Atomare Strahlung",
+        antworten: [
+            "ist messtechnisch erfassbar.",
+            "ist messtechnisch nicht erfassbar.",
+            "ist nur im ortsfesten Bereich messtechnisch erfassbar.",
+            "ist im ortsfesten und Transportbereichen nicht messtechnisch erfassbar."
+        ],
+        richtigeAntwort: 0
     },
     {
         frage: "Zur Brandklasse A gehören",
@@ -360,17 +750,68 @@
 
             if (antwortIndex === aktuelleFrage.richtigeAntwort) {
                 antwortButton.style.backgroundColor = "green";
+                incrementCounter("DailyWin"); // DailyWin-Zähler erhöhen
+                anzeigenZähler(); // Zähler im Popup aktualisieren
                 setTimeout(function() {
                     popup.remove();
                 }, 3000);
             } else {
                 antwortButton.style.backgroundColor = "red";
+                incrementCounter("DailyFail"); // DailyFail-Zähler erhöhen
+                anzeigenZähler(); // Zähler im Popup aktualisieren
                 setTimeout(function() {
                     // Nächste Frage anzeigen
                     aktualisierePopup();
                 }, 3000);
             }
         }
+    }
+
+    // Funktion zum Erhöhen der Zähler im LocalStorage
+    function incrementCounter(counterName) {
+        var counterValue = localStorage.getItem(counterName);
+        if (counterValue) {
+            localStorage.setItem(counterName, parseInt(counterValue) + 1);
+        } else {
+            localStorage.setItem(counterName, 1);
+        }
+    }
+
+    // Funktion zum Anzeigen der Zähler im Popup
+    function anzeigenZähler() {
+        var zählerContainer = document.getElementById("zählerContainer");
+        if (zählerContainer) {
+            zählerContainer.remove();
+        }
+
+        zählerContainer = document.createElement("div");
+        zählerContainer.id = "zählerContainer";
+        zählerContainer.style.position = "absolute";
+        zählerContainer.style.top = "10px";
+        zählerContainer.style.right = "10px";
+        zählerContainer.style.display = "flex";
+        zählerContainer.style.justifyContent = "flex-end";
+        zählerContainer.style.alignItems = "center";
+
+        var dailyFailCounter = document.createElement("span");
+        dailyFailCounter.style.color = "red";
+        dailyFailCounter.style.marginRight = "10px";
+        dailyFailCounter.textContent = "Daily Fail: " + (localStorage.getItem("DailyFail") || 0);
+
+        var dailyWinCounter = document.createElement("span");
+        dailyWinCounter.style.color = "green";
+        dailyWinCounter.style.marginRight = "10px";
+        dailyWinCounter.textContent = "Daily Win: " + (localStorage.getItem("DailyWin") || 0);
+
+        var totalCounter = document.createElement("span");
+        totalCounter.style.color = "black";
+        totalCounter.textContent = "Total: " + ((parseInt(localStorage.getItem("DailyFail")) || 0) + (parseInt(localStorage.getItem("DailyWin")) || 0));
+
+        zählerContainer.appendChild(dailyFailCounter);
+        zählerContainer.appendChild(dailyWinCounter);
+        zählerContainer.appendChild(totalCounter);
+
+        popupContent.appendChild(zählerContainer);
     }
 
     // Popup erstellen
@@ -408,5 +849,5 @@
 
     // Popup initialisieren
     aktualisierePopup();
+    anzeigenZähler();
 })();
-
