@@ -336,7 +336,7 @@
         richtigeAntwort: 3
     },
 		            {
-        frage: "Wozu ist der Druck in "Druckverband"?",
+        frage: "Wozu ist der Druck in Druckverband?",
         antworten: [
             "Steht für die bedrückende Situation des Patienten",
             "Übt Druck auf eine stark blutende Wunde aus",
