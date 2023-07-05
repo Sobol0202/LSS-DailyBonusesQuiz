@@ -378,16 +378,6 @@
         richtigeAntwort: 0
     },
 		            {
-        frage: "",
-        antworten: [
-            "",
-            "",
-            "",
-            ""
-        ],
-        richtigeAntwort: 
-    },
-		            {
         frage: "Kohlenmonoxid bindet sich ca. ... mal stärker an Hämoglobin als Sauerstoff",
         antworten: [
             "2",
