@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         LSS Daily Bonuses Quiz San
 // @namespace    https://www.leitstellenspiel.de
-// @version      1.4
+// @version      1.5
 // @description  Popup quiz for the daily bonuses San Version
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/daily_bonuses
+// @match        https://www.leitstellenspiel.de/event-calendar
 // @grant        none
 // ==/UserScript==
 
