@@ -594,6 +594,8 @@
     popupContent.style.borderRadius = "10px";
     popupContent.style.display = "grid";
     popupContent.style.gridTemplateColumns = "repeat(12, 1fr)";
+    popupContent.style.overflowY = "auto"; // Hinzugefügt: Scrollbar aktivieren
+    popupContent.style.maxHeight = "80vh"; // Hinzugefügt: Maximale Höhe für den Inhalt festlegen
     popup.appendChild(popupContent);
 
     // Frage hinzufügen
