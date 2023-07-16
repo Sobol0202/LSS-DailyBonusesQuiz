@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Daily Bonuses Quiz EH
 // @namespace    https://www.leitstellenspiel.de
-// @version      1.6
+// @version      1.7
 // @description  Popup quiz for the daily bonuses Ersthelfer
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/daily_bonuses
@@ -498,6 +498,35 @@
         antwortAusgewählt = false; // Zustand der Frage zurücksetzen
     }
 
+    // Funktion zum Aktualisieren des Popup-Inhalts
+    function aktualisierePopup() {
+        // Zufällige Frage auswählen
+        var zufallsIndex = Math.floor(Math.random() * fragen.length);
+        var aktuelleFrage = fragen[zufallsIndex];
+
+        // Frage aktualisieren
+        frageElement.textContent = aktuelleFrage.frage;
+
+        // Antwortbuttons aktualisieren
+        while (antwortButtonsContainer.firstChild) {
+            antwortButtonsContainer.firstChild.removeEventListener("click", antwortButtonClickHandler);
+            antwortButtonsContainer.firstChild.remove();
+        }
+
+        aktuelleFrage.antworten.forEach(function(antwort, index) {
+            var antwortButton = document.createElement("button");
+            antwortButton.textContent = antwort;
+            antwortButton.style.display = "block";
+            antwortButton.style.margin = "10px auto";
+            antwortButton.style.padding = "20px 40px";
+            antwortButton.style.fontSize = "20px";
+            antwortButton.addEventListener("click", antwortButtonClickHandler);
+            antwortButtonsContainer.appendChild(antwortButton);
+        });
+
+        antwortAusgewählt = false; // Zustand der Frage zurücksetzen
+    }
+
     // Funktion zum Behandeln des Klicks auf eine Antwort
     function antwortButtonClickHandler(event) {
         if (!antwortAusgewählt) { // Überprüfen, ob noch keine Antwort ausgewählt wurde
@@ -518,6 +547,10 @@
                 }, 3000);
             } else {
                 antwortButton.style.backgroundColor = "red";
+                // Die richtige Antwort markieren
+                var buttons = antwortButtonsContainer.querySelectorAll("button");
+                buttons[aktuelleFrage.richtigeAntwort].style.backgroundColor = "yellow";
+
                 incrementCounter("DailyFail"); // DailyFail-Zähler erhöhen
                 anzeigenZähler(); // Zähler im Popup aktualisieren
                 setTimeout(function() {
@@ -592,8 +625,6 @@
     popupContent.style.backgroundColor = "white";
     popupContent.style.padding = "20px";
     popupContent.style.borderRadius = "10px";
-    popupContent.style.display = "grid";
-    popupContent.style.gridTemplateColumns = "repeat(12, 1fr)";
     popupContent.style.overflowY = "auto"; // Hinzugefügt: Scrollbar aktivieren
     popupContent.style.maxHeight = "80vh"; // Hinzugefügt: Maximale Höhe für den Inhalt festlegen
     popup.appendChild(popupContent);
@@ -602,14 +633,11 @@
     var frageElement = document.createElement("p");
     frageElement.style.fontSize = "24px";
     frageElement.style.textAlign = "center";
-    frageElement.style.color = "black";
-    frageElement.style.gridColumn = "1 / span 12";
     popupContent.appendChild(frageElement);
 
     // Antwortbuttons Container erstellen
     var antwortButtonsContainer = document.createElement("div");
     antwortButtonsContainer.style.textAlign = "center";
-    antwortButtonsContainer.style.gridColumn = "1 / span 12";
     popupContent.appendChild(antwortButtonsContainer);
 
     // Popup zur Seite hinzufügen
