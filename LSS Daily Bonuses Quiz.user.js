@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Daily Bonuses Quiz
 // @namespace    https://www.leitstellenspiel.de
-// @version      1.6
+// @version      1.7
 // @description  Popup quiz for the daily bonuses
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/daily_bonuses
@@ -758,6 +758,10 @@
                 }, 3000);
             } else {
                 antwortButton.style.backgroundColor = "red";
+                // Die richtige Antwort markieren
+                var buttons = antwortButtonsContainer.querySelectorAll("button");
+                buttons[aktuelleFrage.richtigeAntwort].style.backgroundColor = "yellow";
+
                 incrementCounter("DailyFail"); // DailyFail-Zähler erhöhen
                 anzeigenZähler(); // Zähler im Popup aktualisieren
                 setTimeout(function() {
@@ -832,8 +836,6 @@
     popupContent.style.backgroundColor = "white";
     popupContent.style.padding = "20px";
     popupContent.style.borderRadius = "10px";
-    popupContent.style.display = "grid";
-    popupContent.style.gridTemplateColumns = "repeat(12, 1fr)";
     popupContent.style.overflowY = "auto"; // Hinzugefügt: Scrollbar aktivieren
     popupContent.style.maxHeight = "80vh"; // Hinzugefügt: Maximale Höhe für den Inhalt festlegen
     popup.appendChild(popupContent);
@@ -842,14 +844,11 @@
     var frageElement = document.createElement("p");
     frageElement.style.fontSize = "24px";
     frageElement.style.textAlign = "center";
-    frageElement.style.color = "black";
-    frageElement.style.gridColumn = "1 / span 12";
     popupContent.appendChild(frageElement);
 
     // Antwortbuttons Container erstellen
     var antwortButtonsContainer = document.createElement("div");
     antwortButtonsContainer.style.textAlign = "center";
-    antwortButtonsContainer.style.gridColumn = "1 / span 12";
     popupContent.appendChild(antwortButtonsContainer);
 
     // Popup zur Seite hinzufügen
