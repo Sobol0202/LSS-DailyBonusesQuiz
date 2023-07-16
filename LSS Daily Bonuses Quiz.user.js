@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Daily Bonuses Quiz
 // @namespace    https://www.leitstellenspiel.de
-// @version      1.5
+// @version      1.6
 // @description  Popup quiz for the daily bonuses
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/daily_bonuses
@@ -834,6 +834,8 @@
     popupContent.style.borderRadius = "10px";
     popupContent.style.display = "grid";
     popupContent.style.gridTemplateColumns = "repeat(12, 1fr)";
+    popupContent.style.overflowY = "auto"; // Hinzugefügt: Scrollbar aktivieren
+    popupContent.style.maxHeight = "80vh"; // Hinzugefügt: Maximale Höhe für den Inhalt festlegen
     popup.appendChild(popupContent);
 
     // Frage hinzufügen
