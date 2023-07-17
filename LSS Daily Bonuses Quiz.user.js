@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Daily Bonuses Quiz
 // @namespace    https://www.leitstellenspiel.de
-// @version      1.7
+// @version      1.8
 // @description  Popup quiz for the daily bonuses
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/daily_bonuses
@@ -844,6 +844,7 @@
     var frageElement = document.createElement("p");
     frageElement.style.fontSize = "24px";
     frageElement.style.textAlign = "center";
+    frageElement.style.color = "black";
     popupContent.appendChild(frageElement);
 
     // Antwortbuttons Container erstellen
