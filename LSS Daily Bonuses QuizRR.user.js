@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Daily Bonuses Quiz Rettungsrambo
 // @namespace    https://www.leitstellenspiel.de
-// @version      1.10r
+// @version      1.11r
 // @description  Popup quiz for the daily bonuses Rettungsrambo Version
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/daily_bonuses
@@ -1514,6 +1514,7 @@
     // Antwortbuttons Container erstellen
     var antwortButtonsContainer = document.createElement("div");
     antwortButtonsContainer.style.textAlign = "center";
+    antwortButtonsContainer.style.color = "black";
     popupContent.appendChild(antwortButtonsContainer);
 
     // Popup zur Seite hinzufügen
